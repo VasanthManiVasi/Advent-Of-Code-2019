@@ -1,7 +1,7 @@
 import time
 import sys
 
-start = time.perf_counter()
+# start = time.perf_counter()
 
 def f(numbers, op_index):
     opcode = numbers[op_index]
@@ -30,5 +30,5 @@ for i in range(100):
         numbers[1], numbers[2] = i, j
         if f(numbers, 0)[0] == 19690720:
             print(100 * i + j)
-            print(time.perf_counter() - start)
+            # print(time.perf_counter() - start)
             sys.exit()
